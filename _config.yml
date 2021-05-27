@@ -1,10 +1,10 @@
 # Site settings
-title: Dgos
-SEOTitle: DGOS | 동꿀오소리
+title: Yongmin
+SEOTitle: Yongmin | Yongmin
 header-img: img/lofi.gif
-email: kdj65511@gmail.com
+email: nikeinmyheart@naver.com
 description: "dev blog"
-keyword: "ML,C++,Algorithm,JavaScript, dev,개발,동꿀오소리,개발 블로그, 일상, 백준, BOJ, 토이 프로젝트, Toy Project"
+keyword: "백준"
 url: "https://scatdelight.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -15,10 +15,10 @@ future: true
 RSS: true
 #weibo_username: huxpro
 #zhihu_username: huxpro
-github_username: donggoolosori
-instagram_username: dongjune_k10
+github_username: scatdelight
+#instagram_username: 
 #twitter_username: huxpro
-facebook_username: dongjune.k10
+#facebook_username: 
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
@@ -62,7 +62,7 @@ kramdown:
 highlighter: rouge
 
 # Disqus settings
-disqus_username: donggoolosori-github-io
+disqus_username: scatdelight.github.io
 
 # Netease settings
 netease_comment: false
@@ -72,12 +72,12 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-178543756-1" # Format: UA-xxxxxx-xx
-ga_domain: donggoolosori.github.io/
+#ga_track_id: "UA-178543756-1" # Format: UA-xxxxxx-xx
+#ga_domain: donggoolosori.github.io/
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "도전하고 실패하자"
+sidebar-about-description: "강현 ㅎㅇㅎㅇ"
 sidebar-avatar: /img/space.gif # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
