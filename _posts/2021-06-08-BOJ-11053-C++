@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      "[BOJ] 11053번 가장 긴 증가하는 부분 수열 - C++"
+subtitle:   " \"다이나믹 프로그래밍\""
+date:       2021-06-08 17:16:00
+author:     "Yongmin"
+header-img: "img/ABC.jpg"
+catalog: true
+tags:
+    - BOJ
+    - C++
+  
+---
+
 # 문제
 [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053)
 
