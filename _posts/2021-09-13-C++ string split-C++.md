@@ -7,7 +7,7 @@ author:     "Yongmin"
 header-img: "img/gyul.jpg"
 catalog: true
 tags:
-    - BOJ
+    - Format
     - C++
   
 ---
