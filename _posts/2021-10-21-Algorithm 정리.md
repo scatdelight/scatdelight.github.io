@@ -60,6 +60,23 @@ hanoi(n, 1, 2, 3)
 - ``브루트 포스 : 모든 경우를 탐색하는 알고리즘으로, for 문을 여러개 사용하여 시간적으로 매우 불리하게 탐색하는 경우가 많은 알고리즘``
 
 
+- ``백트래킹 : DFS기반 알고리즘으로, 한 경로를 따라 들어가다가 틀린 경우가 나왔을 경우 이전 상태로 돌아가서 다른 경로로 탐색하는 알고리즘``
+
+```python
+n,m = list(map(int,input().split()))
+s = []
+def dfs(start):
+    if len(s)==m:
+        print(' '.join(map(str,s)))
+        return
+    
+    for i in range(start,n+1):
+        if i not in s:
+            s.append(i)
+            dfs(i+1)
+            s.pop()
+dfs(1)
+```
 
 
 
