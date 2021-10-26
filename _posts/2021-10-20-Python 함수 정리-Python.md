@@ -18,7 +18,7 @@ tags:
 - chr() : 아스키 코드 입력을 받아 문자를 리턴하는 함수
 - [::-1] : 리스트의 역순으로 읽는다 ex) num = 123 --> reverse_num = int(num[::-1])
 - set() : 중복을 허용하지 않는 함수 ex) s = set('hello') --> s = {'e', 'l', 'h', 'o'}
-- dict : key와 value로 구성되어 있는 자료형 ex) a = {'key' = 'value'}
+- dict : key와 value로 구성되어 있는 자료형 ex) a = {'key' : 'value'}, a.keys(), a.values(), a.items()
 
 
 
