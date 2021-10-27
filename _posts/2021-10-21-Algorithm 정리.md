@@ -79,4 +79,46 @@ dfs(1)
 ```
 
 
+- ``동적 계획법(DP) : 배열을 통해 index마다의 특정 정보를 담고 이것을 활용하여 그 다음 index를 구해내는 알고리즘. ``
 
+ex) LIS(Longest Increasing Subsequence, 가장 긴 증가하는 부분 수열) : 가장 긴 증가하는 부분 수열을 찾는 부분 수열을 찾는 문제로, 증가하는 값이 있을 때 그 전까지의 index에서 최대값에 +1을 하는 것을 반복
+
+```python
+x = int(input())
+
+arr = list(map(int, input().split()))
+
+dp = [1 for i in range(x)]
+
+for i in range(x):
+    for j in range(i):
+        if arr[i] > arr[j]:
+            dp[i] = max(dp[i], dp[j]+1)
+
+print(max(dp))
+```
+
+ex) LCS(Longest Common Subsequence, 최장 공통 부분 수열) : 두 문자열을 공통 부분 수열 중에서 최장값을 찾는 문제로, 두 가지의 경우를 나눠서 dp를 적용한다.
+dp[i][j] = 첫번째 문자열 i번째 문자와 두번째 문자열 j번째 문자까지 비교하였을 때 LCS 값
+ 1) 비교하고 있는 문자가 같다면 : dp 최대값 + 1
+ 2) 비교하교 있는 문자가 다르다면 : max(dp[i-1][j], dp[i][j-1])
+를 적용한다.
+
+```python
+import sys
+
+S1 = sys.stdin.readline().strip().upper()
+S2 = sys.stdin.readline().strip().upper()
+len1 = len(S1)
+len2 = len(S2)
+matrix = [[0] * (len2 + 1) for _ in range(len1 + 1)]
+
+for i in range(1, len1 + 1):
+    for j in range(1, len2 + 1):
+        if S1[i - 1] == S2[j - 1]:
+            matrix[i][j] = matrix[i - 1][j - 1] + 1
+        else:
+            matrix[i][j] = max(matrix[i - 1][j], matrix[i][j - 1])
+
+print(matrix[-1][-1])
+```
