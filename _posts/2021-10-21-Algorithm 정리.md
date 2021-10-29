@@ -122,3 +122,26 @@ for i in range(1, len1 + 1):
 
 print(matrix[-1][-1])
 ```
+
+
+- 그리디 알고리즘 : 매 선택에서 당장 최적의 답을 찾아 정답을 도출해내는 알고리즘
+
+
+- 유클리드 호제법 : 최대공약수는 큰 수를 작은수로 나누고 생긴 나머지로 작은 수를 나누는 것을 반복하여 나머지가 0이 될 때까지 진행했을 때 마지막 수를 최대공약수라고 한다. 최소공배수는 두 수의 곱에 최대공약수를 나눈 값이다.
+
+```python
+a, b = map(int, input().split())
+
+def gcd(a, b):
+    while b > 0:
+        a, b = b, a % b
+    return a
+
+def lcm(a, b):
+    return a * b // gcd(a, b)
+
+print(gcd(a, b))
+print(lcm(a, b))
+```
+
+
